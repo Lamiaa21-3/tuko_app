@@ -1,5 +1,6 @@
 
-import 'package:audioplayers/audioplayers.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
+
 import 'package:flutter/material.dart';
 import 'package:tuko/models/ietm.dart';
 
@@ -41,9 +42,14 @@ class Ietm extends StatelessWidget {
             ),
             IconButton(
               onPressed: (){
-                AudioCache player = AudioCache(prefix:  'assets/sounds/colors/ ');
-                player.load('black.mp3');
-                print(" done ");
+                // AudioCache player = AudioCache(prefix:  'assets/sounds/colors/ ');
+                // player.load('black.mp3');
+                // print(" done ");
+                final assetsAudioPlayer = AssetsAudioPlayer();
+
+                assetsAudioPlayer.open(
+                  Audio("assets/sounds/colors/black.mp3"),
+                );
 
               },
               icon: Icon(
