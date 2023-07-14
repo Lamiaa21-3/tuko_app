@@ -5,35 +5,34 @@ import 'package:flutter/material.dart';
 import 'package:tuko/models/ietm.dart';
 
 
-class Ietm extends StatelessWidget {
-   Ietm({required this.number,}) ;
-  Models number;
+class PhraseIetm extends StatelessWidget {
+  PhraseIetm({ required this.phrase}) ;
 
-
+  PhaseModel phrase;
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Container(
         height: 65,
-        color: Colors.orange,
+        color: Colors.deepPurple,
         child: Row(
           children: [
-            Container(
-              color: Colors.white70,
-              child: Image.asset(number.image),
-            ),
-            SizedBox(
-              width: 15,
-            ),
+          //   Container(
+          //     color: Colors.white70,
+          //     child: Image.asset(phrase.image),
+          //   ),
+          //   SizedBox(
+          //     width: 15,
+          //   ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  number.jpName,
+                  phrase.jpName,
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 Text(
-                  number.enName,
+                  phrase.enName,
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ],
@@ -49,7 +48,7 @@ class Ietm extends StatelessWidget {
                 final assetsAudioPlayer = AssetsAudioPlayer();
 
                 assetsAudioPlayer.open(
-                  Audio(number.sound),
+                  Audio(phrase.sound),
                 );
 
               },
@@ -60,7 +59,7 @@ class Ietm extends StatelessWidget {
               ),
 
             ),
-          ],
+         ]
         ),
       ),
     );

@@ -1,4 +1,3 @@
-import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:tuko/components/ietm.dart';
@@ -8,47 +7,67 @@ import '../models/ietm.dart';
 class Numbers extends StatelessWidget {
   Numbers({Key? key}) : super(key: key);
 
-  final List<Number> numbers = [
-    Number(
+  final List<Models> numbers = [
+    Models(
         image: 'assets/images/numbers/number_one.png',
         enName: 'one',
-        jpName: 'ichi'),
-    Number(
+        jpName: 'ichi',
+      sound: 'assets/sounds/numbers/number_one_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_two.png',
         enName: 'two',
-        jpName: 'Ni'),
-    Number(
+        jpName: 'Ni',
+      sound: 'assets/sounds/numbers/number_two_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_three.png',
         enName: 'three',
-        jpName: 'San'),
-    Number(
+        jpName: 'San',
+      sound: 'assets/sounds/numbers/number_three_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_four.png',
         enName: 'four',
-        jpName: 'Shi'),
-    Number(
+        jpName: 'Shi',
+      sound: 'assets/sounds/numbers/number_four_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_five.png',
         enName: 'fife',
-        jpName: 'Go'),
-    Number(
+        jpName: 'Go',
+      sound: 'assets/sounds/numbers/number_five_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_six.png',
         enName: 'six',
-        jpName: 'Roku'),
-    Number(
+        jpName: 'Roku',
+      sound: 'assets/sounds/numbers/number_six_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_seven.png',
         enName: 'seven',
-        jpName: 'Sebun'),
-    Number(
+        jpName: 'Sebun',
+      sound: 'assets/sounds/numbers/number_seven_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_eight.png',
         enName: 'eight',
-        jpName: 'hachi'),
-    Number(
+        jpName: 'hachi',
+      sound: 'assets/sounds/numbers/number_eight_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_nine.png',
         enName: 'nine',
-        jpName: 'Kyu'),
-    Number(
+        jpName: 'Kyu',
+      sound: 'assets/sounds/numbers/number_nine_sound.mp3',
+    ),
+    Models(
         image: 'assets/images/numbers/number_ten.png',
         enName: 'ten',
-        jpName: 'ju'),
+        jpName: 'ju',
+      sound: 'assets/sounds/numbers/number_ten_sound.mp3',
+    ),
   ];
 
   @override

@@ -5,22 +5,21 @@ import 'package:flutter/material.dart';
 import 'package:tuko/models/ietm.dart';
 
 
-class Ietm extends StatelessWidget {
-   Ietm({required this.number,}) ;
-  Models number;
+class IetmFamily extends StatelessWidget {
+  IetmFamily({ required this.family}) ;
 
-
+  Models family;
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Container(
         height: 65,
-        color: Colors.orange,
+        color: Colors.green,
         child: Row(
           children: [
             Container(
               color: Colors.white70,
-              child: Image.asset(number.image),
+              child: Image.asset(family.image),
             ),
             SizedBox(
               width: 15,
@@ -29,11 +28,11 @@ class Ietm extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  number.jpName,
+                  family.jpName,
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
                 Text(
-                  number.enName,
+                  family.enName,
                   style: TextStyle(color: Colors.white, fontSize: 18),
                 ),
               ],
@@ -49,7 +48,7 @@ class Ietm extends StatelessWidget {
                 final assetsAudioPlayer = AssetsAudioPlayer();
 
                 assetsAudioPlayer.open(
-                  Audio(number.sound),
+                  Audio(family.sound),
                 );
 
               },
