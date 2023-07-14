@@ -14,7 +14,7 @@ class PhraseIetm extends StatelessWidget {
     return Container(
       child: Container(
         height: 65,
-        color: Colors.deepPurple,
+        color: Colors.blueAccent,
         child: Row(
           children: [
           //   Container(
